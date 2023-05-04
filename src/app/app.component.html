@@ -1,3 +1,10 @@
-<h1 class="tw-text-3xl tw-font-bold tw-underline tw-text-red-500">
-  Hello world!
-</h1>
+<app-top-bar></app-top-bar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" position="end" fixedInViewport="true">
+    Menu Work
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
