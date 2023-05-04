@@ -1,0 +1,11 @@
+.brand-name {
+  &::before {
+    background: #fff;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+  }
+}
