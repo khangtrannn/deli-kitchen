@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CategorySelectionComponent } from './components/menu-container/components/category-selection/category-selection.component';
 import { MenuContainerComponent } from './components/menu-container/menu-container.component';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     TopBarComponent,
     HomepageComponent,
     MenuContainerComponent,
+    CategorySelectionComponent,
   ],
   imports: [
     BrowserModule,
