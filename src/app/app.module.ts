@@ -16,6 +16,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { CategoryContainerComponent } from './components/menu-container/components/category-container/category-container.component';
 import { ProductItemComponent } from './components/menu-container/components/product-item/product-item.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     OurServicesComponent,
     FooterComponent,
     FeaturedProductsComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,

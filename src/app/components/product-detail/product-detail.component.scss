@@ -1,0 +1,10 @@
+.title::before {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
