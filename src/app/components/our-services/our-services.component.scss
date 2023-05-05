@@ -1,0 +1,8 @@
+.title {
+  @apply tw-text-[#333] tw-text-base tw-font-extrabold
+    tw-leading-[22px] tw-text-center tw-uppercase tw-mt-2.5 tw-mb-1 tw-mx-0;
+}
+
+.description {
+  @apply tw-text-[#666] tw-text-[15px] tw-font-normal tw-leading-5 tw-text-center tw-mt-0 tw-mb-3 tw-mx-0;
+}

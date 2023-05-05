@@ -1,3 +1,5 @@
-.text-secondary {
-  font-family: Nunito Sans,Arial,Helvetica,sans-serif;
+@layer utilities {
+  .text-secondary {
+    font-family: Nunito Sans,Arial,Helvetica,sans-serif;
+  }
 }
