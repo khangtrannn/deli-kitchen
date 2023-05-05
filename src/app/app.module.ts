@@ -7,6 +7,7 @@ import { MenuContainerComponent } from './components/menu-container/menu-contain
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { IntroductionComponent } from './components/homepage/components/introduction/introduction.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { CategoryContainerComponent } from './components/menu-container/components/category-container/category-container.component';
@@ -25,6 +26,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     ProductItemComponent,
     IntroductionComponent,
     OurServicesComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

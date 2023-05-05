@@ -1,0 +1,11 @@
+.title {
+  &::before {
+    background: #d83a3a;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 42px;
+  }
+}
