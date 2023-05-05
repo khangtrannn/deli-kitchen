@@ -1,0 +1,15 @@
+.featured-product-item::after {
+  background: linear-gradient(180deg,transparent,#000);
+  bottom: 0;
+  content: "";
+  height: 150px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+:host ::ng-deep {
+  .owl-dot.active span {
+    background: #d83a3a !important;
+  }
+}
