@@ -18,6 +18,7 @@ import { ProductItemComponent } from './components/menu-container/components/pro
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { ProductInformationComponent } from './components/product-detail/components/product-information/product-information.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     FeaturedProductsComponent,
     ProductDetailComponent,
     ProductInformationComponent,
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
