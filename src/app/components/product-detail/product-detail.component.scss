@@ -12,8 +12,4 @@
 app-product-information {
   display: block;
   border-top: 1px dashed #ccc;
-
-  &:first-of-type {
-    border-top: none !important;
-  }
 }

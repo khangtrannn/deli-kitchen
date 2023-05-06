@@ -10,19 +10,31 @@
   </div>
 </div>
 
-<div class="tw-px-2.5 tw-py-5">
-  <div class="tw-w-full tw-pb-[80%] tw-relative">
-    <div class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0">
-      <img class="tw-w-full tw-h-full" src="https://img.tastykitchen.vn/crop/820x642/2021/01/25/pho-cuon-hn-1280x1000-7020.jpg" />
+<div class="tw-px-2.5 tw-py-5 md:tw-py-[60px] md:tw-max-w-[1040px] md:tw-mx-auto">
+  <div class="md:tw-flex md:tw-gap-[40px] md:tw-mb-16">
+    <div class="tw-w-full md:tw-w-[500px] tw-h-full">
+      <div class="tw-w-full tw-pb-[80%] tw-relative">
+        <div class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0">
+          <img class="tw-w-full tw-h-full" src="https://img.tastykitchen.vn/crop/820x642/2021/01/25/pho-cuon-hn-1280x1000-7020.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="md:tw-w-1/2">
+      <div class="md:tw-w-[45%] md:tw-absolute">
+        <h1 class="text-secondary tw-text-[#333] tw-text-lg tw-font-bold tw-leading-[25px]
+          tw-uppercase tw-mt-5 tw-mb-0 tw-mx-0 md:tw-text-[30px] md:tw-leading-[41px] md:tw-mt-0" title="Phở cuốn TASTY">Phở cuốn TASTY</h1>
+
+        <p class="tw-mb-0 tw-mt-2 text-secondary tw-text-[26px] tw-font-semibold tw-leading-[35px] tw-text-[#d83a3a]
+          md:tw-text-[36px] md:tw-leading-[49px] md:tw-mt-5"> 83.000 đ </p>
+
+        <button class="btn-primary tw-text-base md:tw-text-xl tw-mt-2.5 md:tw-mt-6 tw-mb-4">Đặt món</button>
+
+        <app-product-information class="!tw-border-t-0" iconUrl="/assets/icons/description.svg"
+          title="Mô tả món:" [description]="product.information.description || ''"></app-product-information>
+      </div>
     </div>
   </div>
-
-  <h1 class="text-secondary tw-text-[#333] tw-text-lg tw-font-bold tw-leading-[25px]
-    tw-uppercase tw-mt-5 tw-mb-0 tw-mx-0" title="Phở cuốn TASTY">Phở cuốn TASTY</h1>
-
-  <p class="tw-mb-0 tw-mt-2 text-secondary tw-text-[26px] tw-font-semibold tw-leading-[35px] tw-text-[#d83a3a]"> 83.000 đ </p>
-
-  <button class="btn-primary tw-text-base tw-mt-2.5 tw-mb-4">Đặt món</button>
 
   <app-product-information *ngIf="product.information.ingredients" iconUrl="/assets/icons/ingredients.svg"
     title="Thành phần:" [description]="product.information.ingredients"></app-product-information>
@@ -32,9 +44,6 @@
 
   <app-product-information *ngIf="product.information.cookingTime" iconUrl="/assets/icons/cooking-time.svg"
     title="Thời gian hoàn tất:" [description]="product.information.cookingTime"></app-product-information>
-
-  <app-product-information *ngIf="product.information.description" iconUrl="/assets/icons/description.svg"
-    title="Mô tả món:" [description]="product.information.description"></app-product-information>
 
   <app-product-information *ngIf="product.information.additionalInformation" iconUrl="/assets/icons/additional-information.svg"
     title="Thông tin thêm:" [description]="product.information.additionalInformation"></app-product-information>

@@ -1,11 +1,11 @@
-<app-top-bar></app-top-bar>
+<app-top-bar class="md:tw-hidden"></app-top-bar>
 
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="over" position="end" fixedInViewport="true">
     Menu Work
   </mat-sidenav>
   <mat-sidenav-content>
-    <div class="tw-min-h-screen tw-mt-[64px]">
+    <div class="tw-min-h-screen tw-mt-[64px] md:tw-mt-0">
       <router-outlet></router-outlet>
     </div>
     <app-footer></app-footer>
