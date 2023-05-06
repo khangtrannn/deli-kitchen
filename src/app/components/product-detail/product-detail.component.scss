@@ -8,3 +8,11 @@
   position: absolute;
   width: 50px;
 }
+
+.information {
+  border-top: 1px dashed #ccc;
+
+  &:first-child {
+    border-top: none;
+  }
+}

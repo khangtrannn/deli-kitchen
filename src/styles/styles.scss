@@ -44,6 +44,7 @@ $deli-kitchen-rewamp-theme: mat.define-light-theme(
 @tailwind utilities;
 
 @import './typography';
+@import './form-control';
 
 html,
 body {

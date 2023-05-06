@@ -1,0 +1,7 @@
+@layer components {
+  .btn-primary {
+    @apply tw-uppercase text-secondary tw-w-full tw-border-none
+    tw-mt-2 tw-text-lg tw-font-semibold tw-h-[40px] tw-text-[#fff]
+    tw-leading-6 tw-py-[7.5px] tw-px-[10px] tw-bg-[#d83a3a];
+  }
+}
