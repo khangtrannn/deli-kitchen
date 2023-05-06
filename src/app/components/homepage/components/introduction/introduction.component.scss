@@ -1,3 +1,5 @@
+@import 'responsive';
+
 .brand-name {
   &::before {
     background: #fff;
@@ -7,5 +9,9 @@
     left: 0;
     position: absolute;
     width: 50px;
+
+    @include tabletAndDesktop() {
+      height: 2px;
+    }
   }
 }
