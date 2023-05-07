@@ -19,6 +19,7 @@ export class FeaturedProductsComponent implements OnInit {
     stagePadding: 300,
     items: 1,
     margin: 40,
+    navSpeed: 1000,
     responsive: {
       0: {
         stagePadding: 0,
