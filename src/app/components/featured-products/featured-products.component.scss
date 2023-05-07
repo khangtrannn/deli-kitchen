@@ -16,8 +16,10 @@
   }
 
   .owl-item {
-    &.cloned {
-      opacity: .4;
+    opacity: .4;
+
+    &.active {
+      opacity: 1;
     }
   }
 }

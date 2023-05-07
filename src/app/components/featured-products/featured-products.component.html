@@ -1,6 +1,6 @@
-<div class="tw-mt-5 tw-py-5 tw-bg-[#eee] md:tw-py-[70px]">
-  <h2 class="tw-text-center tw-uppercase tw-text-[#333] tw-text-[22px] tw-font-medium tw-tracking-wider
-    tw-leading-[27px] tw-mt-0 tw-mb-3 md:tw-mb-7 md:tw-leading-[54px] md:tw-text-[44px] md:tw-font-medium">Có thể bạn quan tâm</h2>
+<div class="tw-py-5 tw-bg-[#eee] md:tw-pb-[70px] md:tw-pt-[50px]">
+  <h2 *ngIf="title" class="tw-text-center tw-uppercase tw-text-[#333] tw-text-[22px] tw-font-medium tw-tracking-wider
+    tw-leading-[27px] tw-mt-0 tw-mb-3 md:tw-mb-7 md:tw-leading-[54px] md:tw-text-[44px] md:tw-font-medium">{{ title }}</h2>
 
   <owl-carousel-o [options]="customOptions">
     <ng-template *ngFor="let i of [1, 2]" carouselSlide [id]="'id' + i">

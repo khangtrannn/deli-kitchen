@@ -15,6 +15,7 @@ import { IntroductionComponent } from './components/homepage/components/introduc
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { CategoryContainerComponent } from './components/menu-container/components/category-container/category-container.component';
 import { ProductItemComponent } from './components/menu-container/components/product-item/product-item.component';
+import { MenuPageComponent } from './components/menu-page/menu-page.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { ProductInformationComponent } from './components/product-detail/components/product-information/product-information.component';
@@ -39,6 +40,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     ProductInformationComponent,
     SideNavComponent,
     PageHeaderComponent,
+    MenuPageComponent,
   ],
   imports: [
     BrowserModule,

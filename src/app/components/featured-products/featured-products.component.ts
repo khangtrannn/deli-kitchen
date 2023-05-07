@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -7,11 +7,13 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./featured-products.component.scss'],
 })
 export class FeaturedProductsComponent implements OnInit {
+  @Input() title: string | undefined;
+
   customOptions: OwlOptions = {
     loop: !0,
     dots: !0,
     nav: !1,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 5e3,
     autoplayHoverPause: !0,
     stagePadding: 300,
