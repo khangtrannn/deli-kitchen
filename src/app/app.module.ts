@@ -9,6 +9,7 @@ import { MenuContainerComponent } from './components/menu-container/menu-contain
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FavoredProductsComponent } from './components/favored-products/favored-products.component';
 import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroductionComponent } from './components/homepage/components/introduction/introduction.component';
@@ -41,6 +42,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     SideNavComponent,
     PageHeaderComponent,
     MenuPageComponent,
+    FavoredProductsComponent,
   ],
   imports: [
     BrowserModule,

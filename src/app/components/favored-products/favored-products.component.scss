@@ -1,0 +1,19 @@
+@import 'responsive';
+
+:host ::ng-deep {
+  app-product-item {
+    .title {
+      @include mobile() {
+        height: 20px;
+        -webkit-line-clamp: 1;
+      }
+    }
+
+    .btn-order {
+      @include mobile() {
+        width: fit-content;
+        padding: 0 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<div class="tw-bg-[#eee] tw-py-[30px] md:tw-pt-[70px] md:tw-pb-[20px]">
+  <h2 class="tw-text-center tw-uppercase tw-text-[#333] tw-text-[22px] tw-font-medium tw-tracking-wider
+      tw-leading-[27px] tw-mt-0 tw-mb-3 md:tw-mb-7 md:tw-leading-[54px] md:tw-text-[44px] md:tw-font-medium">Món yêu thích</h2>
+
+  <div class="tw-px-4">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template *ngFor="let i of [1, 2, 3, 4]" carouselSlide [id]="'id' + i">
+        <app-product-item></app-product-item>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>
