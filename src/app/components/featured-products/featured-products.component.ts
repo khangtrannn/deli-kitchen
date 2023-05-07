@@ -8,21 +8,38 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class FeaturedProductsComponent implements OnInit {
   customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: false,
-    pullDrag: false,
-    dots: true,
-    margin: 10,
-    navSpeed: 700,
-    autoplay: true,
-    nav: false,
+    loop: !0,
+    dots: !0,
+    nav: !1,
+    autoplay: false,
+    autoplayTimeout: 5e3,
+    autoplayHoverPause: !0,
+    stagePadding: 300,
+    items: 1,
+    margin: 40,
     responsive: {
       0: {
+        stagePadding: 0,
         items: 1,
+        margin: 20,
       },
-      600: {
-        items: 4,
+      1000: {
+        stagePadding: 100,
+        items: 2,
+        margin: 30,
+        dots: !1,
+      },
+      1600: {
+        stagePadding: 180,
+        items: 2,
+        margin: 40,
+        dots: !1,
+      },
+      1900: {
+        stagePadding: 211.5,
+        items: 2,
+        margin: 40,
+        dots: !1,
       },
     },
   };

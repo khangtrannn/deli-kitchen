@@ -1,3 +1,5 @@
+@import 'responsive';
+
 .featured-product-item::after {
   background: linear-gradient(180deg,transparent,#000);
   bottom: 0;
@@ -11,5 +13,11 @@
 :host ::ng-deep {
   .owl-dot.active span {
     background: #d83a3a !important;
+  }
+
+  .owl-item {
+    &.cloned {
+      opacity: .4;
+    }
   }
 }
