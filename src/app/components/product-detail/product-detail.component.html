@@ -21,7 +21,7 @@
     </div>
 
     <div class="md:tw-w-1/2">
-      <div class="md:tw-w-[45%] md:tw-absolute">
+      <div class="md:tw-w-[calc(45% - 240px)] md:tw-absolute">
         <h1 class="text-secondary tw-text-[#333] tw-text-lg tw-font-bold tw-leading-[25px]
           tw-uppercase tw-mt-5 tw-mb-0 tw-mx-0 md:tw-text-[30px] md:tw-leading-[41px] md:tw-mt-0" title="Phở cuốn TASTY">Phở cuốn TASTY</h1>
 
@@ -30,14 +30,14 @@
 
         <button class="btn-primary tw-text-base md:tw-text-xl tw-mt-2.5 md:tw-mt-6 tw-mb-4">Đặt món</button>
 
-        <app-product-information class="!tw-border-t-0" iconUrl="/assets/icons/description.svg"
-          title="Mô tả món:" [description]="product.information.description || ''"></app-product-information>
+        <app-product-information class="!tw-border-t-0" iconUrl="/assets/icons/ingredients.svg"
+          title="Thành phần:" [description]="product.information.ingredients || ''"></app-product-information>
       </div>
     </div>
   </div>
 
-  <app-product-information *ngIf="product.information.ingredients" iconUrl="/assets/icons/ingredients.svg"
-    title="Thành phần:" [description]="product.information.ingredients"></app-product-information>
+  <app-product-information iconUrl="/assets/icons/description.svg"
+    title="Mô tả món:" [description]="product.information.description || ''"></app-product-information>
 
   <app-product-information *ngIf="product.information.servingSize" iconUrl="/assets/icons/serving-size.svg"
     title="Khẩu phần:" [description]="product.information.servingSize"></app-product-information>
