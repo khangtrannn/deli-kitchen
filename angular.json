@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "deli-kitchen-rewamp": {
+    "deli-kitchen-revamp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/deli-kitchen-rewamp",
+            "outputPath": "dist/deli-kitchen-revamp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "deli-kitchen-rewamp:build:production"
+              "browserTarget": "deli-kitchen-revamp:build:production"
             },
             "development": {
-              "browserTarget": "deli-kitchen-rewamp:build:development"
+              "browserTarget": "deli-kitchen-revamp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "deli-kitchen-rewamp:build"
+            "browserTarget": "deli-kitchen-revamp:build"
           }
         },
         "test": {
