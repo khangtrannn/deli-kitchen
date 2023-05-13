@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductItemComponent implements OnInit {
   imageUrl!: string;
+  outOfStock = false;
 
   constructor() {}
 

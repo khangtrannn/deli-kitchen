@@ -1,8 +1,6 @@
 <div class="tw-mb-[5px] tw-relative tw-bg-blue-300 tw-pb-[75%]">
   <div class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0">
-    <span title="Hết hàng" class="tw-text-[10px] tw-h-[18px] tw-leading-[18px] tw-absolute
-      tw-left-[5px] tw-top-[5px] md:tw-left-[10px] md:tw-top-[10px] tw-bg-[rgba(51,51,51,.88)] tw-rounded-[10px] tw-text-[#fff]
-      tw-font-bold text-secondary tw-px-2 tw-uppercase md:tw-text-[14px] md:tw-h-[24px] md:tw-leading-[24px]">Hết hàng</span>
+    <ng-container *ngIf="outOfStock; then outOfStockTemplate"></ng-container>
     <img class="tw-object-cover tw-w-full tw-h-full" [src]="imageUrl" />
   </div>
 </div>
@@ -14,3 +12,9 @@
 <p class="tw-my-0 text-secondary tw-text-sm tw-font-bold tw-leading-5 tw-h-5 tw-text-[#d83a3a] md:tw-text-base md:tw-font-semibold"> 69.000 đ </p>
 
 <button class="btn-order btn-primary md:tw-h-[40px] md:tw-w-[124px] md:tw-text-lg md:tw-font-semibold tw-float-right">Đặt Món</button>
+
+<ng-template #outOfStockTemplate>
+  <span title="Hết hàng" class="tw-text-[10px] tw-h-[18px] tw-leading-[18px] tw-absolute
+    tw-left-[5px] tw-top-[5px] md:tw-left-[10px] md:tw-top-[10px] tw-bg-[rgba(51,51,51,.88)] tw-rounded-[10px] tw-text-[#fff]
+    tw-font-bold text-secondary tw-px-2 tw-uppercase md:tw-text-[14px] md:tw-h-[24px] md:tw-leading-[24px]">Hết hàng</span>
+</ng-template>

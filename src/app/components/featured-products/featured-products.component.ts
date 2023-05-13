@@ -7,7 +7,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./featured-products.component.scss'],
 })
 export class FeaturedProductsComponent implements OnInit {
-  @Input() title: string | undefined;
+  @Input() header: string | undefined;
 
   customOptions: OwlOptions = {
     loop: !0,
