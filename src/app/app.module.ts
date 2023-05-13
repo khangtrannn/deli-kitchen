@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from '@angular/fire/compat';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { firebase } from './../../firebase.config';
 
 import { CategorySelectionComponent } from './components/menu-container/components/category-selection/category-selection.component';
 import { MenuContainerComponent } from './components/menu-container/menu-container.component';
@@ -50,6 +52,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     AppRoutingModule,
     MatSidenavModule,
     CarouselModule,
+    AngularFireModule.initializeApp(firebase),
   ],
   providers: [],
   bootstrap: [AppComponent],
