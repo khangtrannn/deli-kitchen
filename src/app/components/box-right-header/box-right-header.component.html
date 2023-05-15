@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <a class="menu-item tw-flex tw-relative tw-cursor-pointer tw-justify-center
+    tw-items-center tw-w-[44px] tw-h-[44px] tw-rounded-[50%] hover:tw-bg-[#d83a3a]">
+    <img src="/assets/images/icon-acc.png" />
+    <ng-container *ngTemplateOutlet="loginPopup"></ng-container>
+  </a>
+  <a class="menu-item tw-flex tw-relative tw-cursor-pointer tw-justify-center
+    tw-items-center tw-w-[44px] tw-h-[44px] tw-rounded-[50%] hover:tw-bg-[#d83a3a]">
+    <img src="/assets/images/icon-cart.png" />
+  </a>
+</div>
+
+<ng-template #loginPopup>
+  <div class="popup !tw-hidden">
+    <a class="tw-text-[#333] tw-text-sm tw-font-bold text-secondary">Đăng nhập</a>
+  </div>
+</ng-template>

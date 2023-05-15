@@ -11,6 +11,7 @@ import { MenuContainerComponent } from './components/menu-container/menu-contain
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BoxRightHeaderComponent } from './components/box-right-header/box-right-header.component';
 import { FavoredProductsComponent } from './components/favored-products/favored-products.component';
 import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -45,6 +46,7 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     PageHeaderComponent,
     MenuPageComponent,
     FavoredProductsComponent,
+    BoxRightHeaderComponent,
   ],
   imports: [
     BrowserModule,
